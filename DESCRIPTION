@@ -3,7 +3,6 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Authors@R:
-<<<<<<< HEAD
   c(person(given = "Xavier",
            family = "Viñas Margalef",
            role = c("aut", "cre"),
@@ -12,10 +11,10 @@ Authors@R:
            family = "Fernandes",
            role = "aut",
            email = "s222497@dtu.dk"), 
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Quim",
+           family = "Bech",
            role = "aut",
-           email = "your@email.com"), 
+           email = "s233374@dtu.dk"), 
     person(given = "firstname",
            family = "lastname",
            role = "aut",
