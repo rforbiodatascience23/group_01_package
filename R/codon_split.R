@@ -6,8 +6,6 @@
 #' @return The output is a codon list in order and by fragments of 3.
 #' @export
 #'
-#' @examples
-#'
 
 codon_split <- function(sequence, start = 1){
   num_nucleotides <- nchar(sequence)

@@ -1,12 +1,12 @@
-#' Codons Concanation
+#' Codons Concatenation
 #'
 #' @param codons here is where the codons are stored
 #'
-#' @return a table of concanated codons is returned
+#' @return a table of concatenated codons is returned
 #' @export
 #'
 #'
-codons_concanation <- function(codons){
-  codons_concanated <- paste0(codon_table[codons], collapse = "")
-  return(codons_concanated)
+codons_concatenation <- function(codons){
+  codons_concatenated <- paste0(codon_table[codons], collapse = "")
+  return(codons_concatenated)
 }

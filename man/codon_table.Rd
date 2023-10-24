@@ -3,8 +3,7 @@
 \docType{data}
 \name{codon_table}
 \alias{codon_table}
-\title{Title
-Codon Table}
+\title{Codon Table}
 \format{
 An object of class \code{character} of length 64.
 }
@@ -15,7 +14,6 @@ An object of class \code{character} of length 64.
 codon_table
 }
 \description{
-Description
 A codon table
 }
 \keyword{datasets}
