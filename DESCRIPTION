@@ -3,14 +3,15 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Authors@R:
+<<<<<<< HEAD
   c(person(given = "Xavier",
            family = "Viñas Margalef",
            role = c("aut", "cre"),
            email = "s233532@dtu.dk"), 
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Jordan",
+           family = "Fernandes",
            role = "aut",
-           email = "your@email.com"), 
+           email = "s222497@dtu.dk"), 
     person(given = "firstname",
            family = "lastname",
            role = "aut",
