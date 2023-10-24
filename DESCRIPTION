@@ -7,10 +7,10 @@ Authors@R:
            family = "lastname",
            role = c("aut", "cre"), # There must be a "cre", but there can only be one
            email = "your@email.com"), 
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Jordan",
+           family = "Fernandes",
            role = "aut",
-           email = "your@email.com"), 
+           email = "s222497@dtu.dk"), 
     person(given = "firstname",
            family = "lastname",
            role = "aut",
