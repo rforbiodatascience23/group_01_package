@@ -1,4 +1,4 @@
-#' Condons Concanation
+#' Codons Concanation
 #'
 #' @param codons here is where the codons are stored
 #'
