@@ -3,10 +3,10 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Authors@R:
-  c(person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"), # There must be a "cre", but there can only be one
-           email = "your@email.com"), 
+  c(person(given = "Xavier",
+           family = "Viñas Margalef",
+           role = c("aut", "cre"),
+           email = "s233532@dtu.dk"), 
     person(given = "firstname",
            family = "lastname",
            role = "aut",
