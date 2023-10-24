@@ -1,4 +1,4 @@
-output_1 <- group01package::dna_builder(15)
+output_1 <- group01package::dna_builder(50)
 output_1
 output_2 <- group01package::DNA_to_RNA(output_1)
 output_2

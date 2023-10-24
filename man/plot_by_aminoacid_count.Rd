@@ -4,7 +4,7 @@
 \alias{plot_by_aminoacid_count}
 \title{Plot By Aminoacid Count}
 \usage{
-plot_by_aminoacid_count(protein)
+plot_by_aminoacid_count(aminoacid)
 }
 \arguments{
 \item{protein}{"A string of aminoacids"}
