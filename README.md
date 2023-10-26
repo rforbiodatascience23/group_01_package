@@ -1,0 +1,150 @@
+group01package
+================
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# group01package
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of group01package is to …
+
+## Installation
+
+You can install the development version of group01package from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("rforbiodatascience23/group_01_package")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(group01package)
+## basic example code
+```
+
+What is special about using `README.Rmd` instead of just `README.md`?
+You can include R chunks like so:
+
+``` r
+summary(cars)
+#>      speed           dist       
+#>  Min.   : 4.0   Min.   :  2.00  
+#>  1st Qu.:12.0   1st Qu.: 26.00  
+#>  Median :15.0   Median : 36.00  
+#>  Mean   :15.4   Mean   : 42.98  
+#>  3rd Qu.:19.0   3rd Qu.: 56.00  
+#>  Max.   :25.0   Max.   :120.00
+```
+
+You’ll still need to render `README.Rmd` regularly, to keep `README.md`
+up-to-date. `devtools::build_readme()` is handy for this.
+
+You can also embed plots, for example:
+
+<img src="man/figures/README-pressure-1.svg" width="100%" />
+
+In that case, don’t forget to commit and push the resulting figure
+files, so they display on GitHub and CRAN.
+
+``` r
+library(group01package)
+```
+
+## Link to github page: <https://github.com/rforbiodatascience23/group_01_package>
+
+# Overview of the package
+
+1)  dna_builder.R: This function creates a random DNA sequence of the
+    desired length. To create a random sequence that contains A,T,G,C
+    with the desired length we are using the sample() function with the
+    characters and the seq_length specified by user. Then the paste0()
+    function is used to concatenate the output returned by the sample()
+    function. We end up with a DNA seq in string format.
+
+2)  DNA_to_RNA.R: This function “transcribes” a given DNA sequence to an
+    RNA sequence. It takes a DNA string as input and converts it into an
+    RNA string. In this conversion, it replaces all occurrences of “T”
+    (thymine, which is specific to DNA) with “U” (uracil, which is
+    specific to RNA).
+
+3)  codon_split: This function is designed to split a given sequence of
+    nucleotides into codons. It takes two arguments: sequence, which is
+    a character string representing the nucleotide sequence, and start
+    specifies where the codon extraction should begin.
+
+4)  codons_contenation.R: this function takes a vector of codons as
+    input and concatenates them into a single string based on a
+    codon_table, so as to find the corresponding amino acid. The return
+    value is the sequence of amino acids.
+
+5)  plot_by_aminoacid_count: this function takes an input amino acid
+    sequence, counts the occurrences of individual amino acids, and then
+    generates a bar plot showing the counts for each unique amino acid.
+
+# Use cases
+
+This package can be used in situations where only DNA sequence
+information is available and information about the encoded protein is
+required.
+
+This tool could be modified to detect start (AUG in eukaryotes) and stop
+codons (UAA, UAG and UGA), so that multiple proteins can be identified,
+if the input DNA sequence is long.
+
+Another useful functionality of being able to detect these codons would
+be the ability to distinguish between coding and non-coding DNA, as
+there is a high probability that the portion of the sequence between
+start and stop codons codes for a protein. Noncoding DNA does not
+provide instructions for making proteins. Since only about 1 percent of
+DNA is made up of protein-coding genes and the other 99 percent is
+noncoding, this tool would be more useful if it could determine protein
+coding regions, and only give the protein sequences of those regions.
+
+The tool could also be modified to give the percentage distribution of
+each amino acid. This can be done by calculating the occurence of each
+amino acid and dividing it by the total length. Useful physico-chemical
+properties of the protein can be extracted in this way, and is shown in
+the use cases.
+
+Below are some use case examples:
+
+1)  You sequence a portion of a bacterial genome and want to see if the
+    bacteria expresses a certain enzyme. You can input the DNA sequence
+    and the package will give you a protein sequence (or sequences)
+    which can then be run against a database of similar known enzymes to
+    find hits.
+
+2)  This package can be used for physico-chemical analysis of proteins.
+    The plot of the amino acid composition is useful in determining
+    properties of the protein such as its hydropathy (Presence of
+    aliphatic amino acids), isoelectric point and net charge (presence
+    of charged amino acids like D, E, K, R, H).
+
+# Discussion
+
+Stringr and ggplot2 were added as dependencies using the console command
+“usethis::use_package(”package_name”)“.
+
+They were then added into the description file using the “@importFrom
+package function” format.
+
+We can call the functions inside these packages using
+“package::function”.
+
+It is important to limit the number of dependencies because the more
+dependencies a package has, the higher the probability that one of them
+will fail and cause problems in that package. However, sometimes it
+can’t be avoided. For example, when a package relies on several other
+packages to function.
+
+Using @importFrom ensures that the function will be available even if
+its package isn’t loaded when the package is loaded, while
+package::function will fail if the user has not installed the specified
+package.
